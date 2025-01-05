@@ -1,0 +1,43 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23FFFFFF" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,138.7C672,128,768,128,864,122.7C960,117,1056,107,1152,112C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>') no-repeat;
+    background-size: cover;
+}
+
+html {
+    font-size: 10px;
+}
+
+img {
+    vertical-align: top;
+}
+
+.page {
+    max-width: 1920px;
+    min-height: 100vh;
+    background-color: lightblue;
+    margin: 0 auto;
+}
+
+svg {
+    max-height: 100%; /* Сохраняем пропорции */
+}
+
+button {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}

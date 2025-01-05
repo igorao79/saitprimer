@@ -1,0 +1,502 @@
+$color2: rgb(37, 99, 255);
+$color3: rgb(255, 67, 97);
+$color4: rgb(255, 65, 108);
+$color5: rgb(233, 116, 37);
+
+
+.secondblock {
+    width: 100%;
+    min-height: 3300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    align-items: center;
+
+
+
+    &__header {
+        width: 100%;
+        min-height: 470px;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+        padding-top: 3%;
+        
+
+
+
+        &__titleblock {
+            max-width: 510px;
+            min-height: 124px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+
+
+            &__span {
+                font-size: 1.4rem;
+                font-family: 'dmsb';
+                letter-spacing: 2.1px;
+                text-transform: uppercase;
+                color: rgb(36, 72, 134);
+            }
+
+            &__title {
+                font-size: 3.6rem;
+                font-family: 'dmsb';
+                letter-spacing: -1.5px;
+                color: rgb(15, 33, 55);
+            }
+
+
+        }
+
+
+
+        &__flexblock {
+            width: 70%;
+            min-height: 268px;
+            display: flex;
+            gap: 150px;
+            align-items: center;
+            justify-content: center;
+            // border: 1px solid black;
+
+
+
+            &__elem {
+                width: 265px;
+                min-height: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            
+                &__pic, &__pic2, &__pic3 {
+                    max-width: 110px;
+                    padding: 39px 29px;
+                    max-height: 110px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: rgb(228, 255, 238);
+                    border-radius: 40px;
+                }
+
+                &__pic2 {
+                    background: rgba($color2, 0.09);
+                }
+
+                &__pic3 {
+                    background-color: rgba($color3, 0.1);
+                }
+
+                
+
+
+            
+                &__title {
+                    font-size: 1.8rem;
+                    font-family: 'dmsb';
+                    white-space: nowrap;
+                }
+            
+                &__text {
+                    font-size: 1.5rem;
+                    font-family: 'dmsr';
+                    text-align: center;
+                    line-height: 28px;
+                }
+            }
+            
+            
+            
+            
+
+
+        }
+
+
+    }
+
+
+    &__main {
+        width: 100%;
+        min-height: 837px;
+        display: flex;
+        gap: 100px;
+        align-items: center;
+        padding-left: 18%;
+        // background-color: #333;
+
+
+        &__left {
+            max-width: 479px;
+            min-height: 837px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &__pic {
+                width: 100%;
+                height: 100%;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+            }
+
+        }
+
+
+        &__right {
+            max-width: 540px;
+            min-height: 582px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 100px;
+
+            &__titleblock {
+                max-width: 510px;
+                max-height: 200px;
+                display: flex;
+                flex-direction: column;
+                gap: 28px;
+
+
+               &__span {
+                    font-size: 1.4rem;
+                    font-family: 'dmsb';
+                    letter-spacing: 2.1px;
+                    text-transform: uppercase;
+                    color: rgb(36, 72, 134);
+                    padding-left: 0.5%;
+               }
+
+               &__title {
+                    font-size: 4.8rem;
+                    font-family: 'dmsb';
+                    letter-spacing: -1.5px;
+                    color: rgb(15, 33, 55);
+               }
+
+            }
+
+            &__flexblock {
+                max-width: 500px;
+                max-height: 700px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                transform: translateX(-30px);
+
+                &__flexblockel {
+                    width: 100%;
+                    min-height: 160px;
+                    display: flex;
+                    gap: 18px;
+                    transform: translateY(-5px); // Сдвиг вверх для эффекта выпирания
+                    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); // Более тёмная и размазанная тень
+                    background: rgb(255, 255, 255);
+                    padding: 25px 0px 0px 32px;
+                    border-radius: 5px;
+
+
+                    &__flexblockelpic {
+                        width: 57px;
+                        height: 57px;
+                        background-color: rgba($color4, 0.1);
+                        border-radius: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                    }
+
+                    &__titleblock {
+                        max-width: 335px;
+                        min-height: 70px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 19px;
+
+                        &__title {
+                            font-size: 1.8rem;
+                            font-family: 'dmsb';
+                        }
+                        &__text {
+                            font-size: 1.5rem;
+                            font-family: 'dmsr';
+                            line-height: 26px;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+        
+
+    }
+
+
+    &__submain {
+        width: 100%;
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+
+
+        &__titleblock {
+            max-width: 510px;
+            min-height: 124px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+
+            &__span {
+                font-size: 1.4rem;
+                font-family: 'dmsb';
+                text-transform: uppercase;
+                color: rgb(36, 72, 134);
+                letter-spacing: 2.1px;
+            }
+
+            &__title {
+                font-size: 3.6rem;
+                font-family: 'dmsb';
+                letter-spacing: -1.5px;
+                color: rgb(15, 33, 55);
+            }
+
+        }
+
+
+        &__flexblock {
+            max-width: 1250px;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 125px;
+
+
+            &__line {
+                width: 100%;
+                min-height: 100px;
+                display: flex;
+                gap: 66px;
+                align-items: center;
+                justify-content: center;
+
+
+                &__el {
+                    max-width: 370px;
+                    display: flex;
+                    gap: 25px;
+
+
+                    &__pic, &__pic2, &__pic3, &__pic4, &__pic5, &__pic6 {
+                        max-width: 82px;
+                        max-height: 82px;
+                        width: 100%;
+                        padding: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: rgba($color3, 0.1);
+                        border-radius: 30px;
+                        // border: 10px solid black;
+
+                    }
+
+                    &__pic2 {
+                        background: rgb(234, 249, 255);
+                    }
+                    &__pic3 {
+                        background: rgb(255, 246, 211);
+                    }
+                    &__pic4 {
+                        background: rgb(228, 255, 238);
+                    }
+                    &__pic5 {
+                        background: rgb(244, 244, 255);
+                    }
+                    &__pic6 {
+                        background: rgba($color5, 0.12);
+                    }
+
+
+                    &__content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        &__title {
+                            font-size: 1.8rem;
+                            font-family: 'dmsb';
+                        }
+
+                        &__text {
+                            font-size: 1.5rem;
+                            font-family: 'dmsr';
+                            line-height: 26px;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+
+    }
+
+    &__foot {
+        width: 100%;
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+
+
+        &__block {
+            max-width: 1300px;
+            min-height: 544px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &__left {
+                width: 40%;
+                min-height: 488px;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                // border: 1px solid black;
+
+                &__titleblock {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    display: flex;
+                    gap: 8px;
+
+                    &__span {
+                        font-size: 1.4rem;
+                        font-family: 'dmsb';
+                        text-transform: uppercase;
+                        color: rgb(36, 72, 134);
+                        letter-spacing: 2.1px;
+                    }
+        
+                    &__title {
+                        font-size: 3.6rem;
+                        font-family: 'dmsb';
+                        letter-spacing: -1.5px;
+                        color: rgb(15, 33, 55);
+                        letter-spacing: -1.5px;
+                    }
+
+                }
+
+                &__text {
+                    max-width: 454px;
+                    font-size: 1.8rem;
+                    font-family: 'dmsr';
+                    line-height: 42px;
+                }
+
+                &__btn {
+                    max-width: 150px;
+                    padding: 13px 31px;
+                    height: 50px;
+                    border: 1.5px solid rgb(255, 255, 255);
+                    border-radius: 50px;
+                    background-color: #264a8b; /* Цвет заливки */
+                    font-size: 1.6rem;
+                    font-family: 'dmsm';
+                    white-space: nowrap;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white; /* Цвет текста */
+                    position: relative; /* Для размещения псевдоэлемента */
+                    overflow: hidden; /* Скрываем всё, что выходит за границы кнопки */
+                    transition: color 0.5s ease, border-color 0.5s ease, transform 0.5s ease; /* Плавный переход */
+                  
+                    /* Заливка */
+                    &::before {
+                      content: "";
+                      position: absolute;
+                      top: 0;
+                      left: -50px;
+                      width: 0;
+                      height: 100%;
+                      background-color: white;
+                      transform: skewX(45deg); /* Наклон заливки */
+                      z-index: -1; /* Помещаем заливку под текст */
+                      transition: width 0.5s ease; /* Плавный переход заливки */
+                    }
+                  
+                    /* Ховер-эффекты */
+                    &:hover {
+                      border-color: black; /* Рамка становится синей */
+                      transform: scale(1.05); /* Лёгкое увеличение кнопки */
+                      color: #264a8b;
+                  
+                      &::before {
+                        width: 250%; /* Заливка расширяется, покрывая кнопку */
+                      }
+                    }
+                }
+                  
+                  
+                
+            }
+
+            &__right {
+                width: 60%;
+                min-height: 544px;
+                // border: 1px solid black;
+
+                &__pic {
+                    width: 100%;
+                    min-height: 544px;
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

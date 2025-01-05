@@ -1,0 +1,352 @@
+.fourthblock {
+    width: 100%;
+    min-height: 1500px;
+    background-color: white;
+    display: flex;
+    gap: 300px;
+    flex-direction: column;
+    padding-top: 5%;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    // border: 1px solid black;
+
+   
+
+    &__clientblock {
+
+        max-width: 1802px;
+        min-height: 637px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+
+        &__titleblock {
+            max-width: 425px;
+            min-height: 124px;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            text-align: center;
+            z-index: 2;
+    
+    
+            &__span {
+                font-size: 1.4rem;
+                font-family: 'dmsb';
+                letter-spacing: 2.1px;
+                text-transform: uppercase;
+                color: rgb(36, 72, 134);
+                opacity: 0.7;
+            }
+    
+            &__title {
+                font-size: 3.6rem;
+                font-family: 'dmsb';
+                letter-spacing: -1.5px;
+                color: rgb(15, 33, 55);
+            }
+    
+        }
+
+
+        &__cardblock {
+            width: 100%;
+            min-height: 470px;
+            display: flex;
+            gap: 32px;
+            flex-shrink: 1;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            // border: 1px solid black;
+
+
+            &__card {
+                max-width: 422px;
+                min-height: 470px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding-left: 40px;
+                gap: 45px;
+                box-shadow: 0px 6px 47px 0px rgba(38, 78, 118, 0.1);
+                background: rgb(255, 255, 255);
+                transition: 0.7s;
+
+                &:hover {
+                    transform: scale(1.02);
+                    animation: myAnim 2s ease 0s 1 normal forwards;
+                }
+
+                &__head {
+                    max-width: 250px;
+                    min-height: 60px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 6px;
+
+
+                    &__rating {
+                        max-width: 126px;
+                        min-height: 32px;
+                        display: flex;
+                        gap: 5px;
+
+                        &__star {
+                            font-size: 2.6rem;
+                            color: rgb(246, 196, 22);
+                        }
+
+                    }
+
+                    &__title {
+                        font-size: 1.6rem;
+                        font-family: 'dmsb';
+                        color: rgb(52, 61, 72);
+                    }
+
+                }
+
+                
+                &__text {
+                    font-size: 1.8rem;
+                    font-family: 'dmsr';
+                    line-height: 38px;
+                }
+
+                &__author {
+                    max-width: 300px;
+                    min-height: 55px;
+                    display: flex;
+                    gap: 20px;
+
+                    &__left{
+                        max-width: 55px;
+                        padding: 30px;
+                        min-height: 55px;
+                        border-radius: 40px;
+                        // background-image: url(../pics/fourthblock/avatar1.avif), url(../pics/fourthblock/avatar1.webp), url(../pics/fourthblock/avatar1.png);
+                        background-image: url(./pics//fourthblock/guest.avif), url(./pics//fourthblock/guest.webp), url(./pics//fourthblock/guest.png);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                    }
+
+                    &__right {
+                        max-width: 142px;
+                        min-height: 55px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+                        justify-content: center;
+
+
+                        &__name {
+                            font-family: 'dmsb';
+                            font-size: 1.6rem;
+                            color: rgb(15, 33, 55);
+                        }
+
+                        &__link {
+                            color: rgb(37, 160, 255);
+                            font-family: 'dmsm';
+                            font-size: 15px;
+                            transition: 0.7s;
+
+                            &:hover {
+                                transform: scale(1.05);
+                                color: #6666CC;
+                            }
+                        }
+
+                    }
+
+
+                }
+
+
+
+
+
+            }
+
+        }
+
+
+    }
+
+
+    &__secureblock {
+        // border: 1px solid black;
+        max-width: 1600px;
+        min-height: 820px;
+        display: flex;
+        gap: 62px;
+        justify-content: center;
+        position: relative;
+        z-index: 5;
+
+
+        &__background {
+            position: absolute;
+            top: -10%;
+            left: 12.9%;
+            width: 100%;
+            transform: scaleX(1.26); /* Увеличивает ширину на 25% */
+            height: 100vh;
+            overflow: hidden;
+            z-index: 1; /* Убедитесь, что фон ниже */
+            pointer-events: none; /* Фон некликабельный */
+            border-radius: 250px 0px 0px 0px;
+            background: linear-gradient(-42.96deg, rgba(255, 253, 230, 0.35) -3.358%,rgba(255, 253, 230, 0.07) -3.349%,rgba(224, 239, 250, 0.35) 92.995%);
+            // border: 1px solid black;
+        }
+
+
+        &__pic {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 743px;
+            max-height: 820px;
+            object-fit: cover;
+            z-index: 5;
+
+            & img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        &__right {
+            max-width: 510px;
+            min-height: 488px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            // border: 1px solid black;
+            z-index: 5;
+
+            &__titleblock {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                display: flex;
+                gap: 8px;
+
+                &__span {
+                    font-size: 1.4rem;
+                    font-family: 'dmsb';
+                    text-transform: uppercase;
+                    color: rgb(36, 72, 134);
+                    letter-spacing: 2.1px;
+                }
+    
+                &__title {
+                    font-size: 3.6rem;
+                    font-family: 'dmsb';
+                    letter-spacing: -1.5px;
+                    color: rgb(15, 33, 55);
+                    letter-spacing: -1.5px;
+                }
+
+            }
+
+            &__text {
+                max-width: 454px;
+                font-size: 1.8rem;
+                font-family: 'dmsr';
+                line-height: 42px;
+            }
+
+            &__btn {
+                max-width: 150px;
+                padding: 13px 31px;
+                height: 50px;
+                border: 1.5px solid rgb(255, 255, 255);
+                border-radius: 50px;
+                background-color: #264a8b; /* Цвет заливки */
+                font-size: 1.6rem;
+                font-family: 'dmsm';
+                white-space: nowrap;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white; /* Цвет текста */
+                position: relative; /* Для размещения псевдоэлемента */
+                overflow: hidden; /* Скрываем всё, что выходит за границы кнопки */
+                transition: color 0.5s ease, border-color 0.5s ease, transform 0.5s ease; /* Плавный переход */
+              
+                /* Заливка */
+                &::before {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  left: -50px;
+                  width: 0;
+                  height: 100%;
+                  background-color: white;
+                  transform: skewX(45deg); /* Наклон заливки */
+                  z-index: -1; /* Помещаем заливку под текст */
+                  transition: width 0.5s ease; /* Плавный переход заливки */
+                }
+              
+                /* Ховер-эффекты */
+                &:hover {
+                  border-color: black; /* Рамка становится синей */
+                  transform: scale(1.05); /* Лёгкое увеличение кнопки */
+                  color: #264a8b;
+              
+                  &::before {
+                    width: 250%; /* Заливка расширяется, покрывая кнопку */
+                  }
+                }
+            }
+              
+            
+        }
+
+    }
+
+
+
+      
+  
+    @keyframes myAnim {
+        0%,
+        100% {
+            transform: translateX(0%);
+            transform-origin: 50% 50%;
+        }
+    
+        15% {
+            transform: translateX(-30px) rotate(6deg);
+        }
+    
+        30% {
+            transform: translateX(15px) rotate(-6deg);
+        }
+    
+        45% {
+            transform: translateX(-15px) rotate(3.6deg);
+        }
+    
+        60% {
+            transform: translateX(9px) rotate(-2.4deg);
+        }
+    
+        75% {
+            transform: translateX(-6px) rotate(1.2deg);
+        }
+    }
+
+
+
+}

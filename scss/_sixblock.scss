@@ -1,0 +1,182 @@
+.sixblock {
+    width: 100%;
+    min-height: 1300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    align-items: center;
+    padding-top: 10%;
+
+
+
+    &__header {
+        max-width: 760px;
+        min-height: 587px;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        align-items: center;
+        
+
+
+
+        &__titleblock {
+            max-width: 510px;
+            min-height: 124px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+
+
+            &__span {
+                font-size: 1.4rem;
+                font-family: 'dmsb';
+                letter-spacing: 2.1px;
+                text-transform: uppercase;
+                color: rgb(36, 72, 134);
+            }
+
+            &__title {
+                font-size: 3.6rem;
+                font-family: 'dmsb';
+                letter-spacing: -1.5px;
+                color: rgb(15, 33, 55);
+            }
+
+
+        }
+
+
+
+        &__content {
+            width: 100%;
+            min-height: 420px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+
+
+            &__details {
+                display: flex;
+                border-bottom: 2px solid rgb(229, 236, 244);
+                flex-direction: column;
+                cursor: pointer;
+                gap: 35px;
+                min-width: 752px;
+            
+                &__summary {
+                    list-style: none;
+                    position: relative;
+                    padding-left: 20px;
+            
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 5px;
+                        left: -15px;
+                        width: 23px;
+                        height: 23px;
+                        background-image: url('../pics/sixblock/plus.svg');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        transition: background-image 0.3s ease;
+                    }
+            
+                    &__title {
+                        font-size: 1.8rem;
+                        font-family: 'dmsm';
+                        line-height: 30px;
+                        color: rgb(15, 33, 55);
+                    }
+                }
+            
+                /* Элементы, которые будут скрыты */
+                &__text {
+                    font-size: 1.6rem;
+                    font-family: 'dmsr';
+                    line-height: 32px;
+                    color: rgb(52, 61, 72);
+                    max-height: 0; /* Скрываем текст */
+                    opacity: 0; /* Скрываем элемент */
+                    overflow: hidden;
+                    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Плавный переход */
+                }
+            
+                /* При открытии анимация работает */
+                &[open] &__text {
+                    max-height: 500px; /* Укажите достаточную высоту для анимации */
+                    opacity: 1; /* Делает элемент видимым */
+                }
+            
+                /* Анимация для иконки */
+                &[open] &__summary::before {
+                    background-image: url('../pics/sixblock/minus.svg');
+                }
+            }
+            
+            
+            
+            
+                      
+
+        }
+
+
+    }
+
+    &__footer {
+        max-width: 900px;
+        min-height: 301px;
+        display: flex;
+        gap: 115px;
+        align-items: center;
+        padding: 0px 12px;
+        justify-content: center;
+        border-top: 2px solid rgb(229, 236, 244);
+
+        &__linkblock {
+            max-width: 264px;
+            min-height: 230px;
+            display: flex;
+            flex-direction: column;
+
+            gap: 28px;
+
+
+            &__title {
+                font-size: 1.8rem;
+                font-family: 'dmsm';
+                color: rgb(15, 33, 55);
+                line-height: 30px;
+            }
+
+            &__spisok {
+                opacity: 0.8;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                &__link {
+                    color: rgb(2, 7, 62);
+                    font-size: 1.4rem;
+                    font-family: 'dmsr';
+                    transition: 0.7s;
+
+
+                    &:hover {
+                        transform: scale(1.05);
+                        color: #6666CC;
+                    }
+                }
+
+            }
+
+
+        }
+
+    }
+
+}

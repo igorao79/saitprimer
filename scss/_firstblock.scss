@@ -1,0 +1,351 @@
+/* Фоновые элементы */
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1; /* Убедитесь, что фон ниже */
+    pointer-events: none; /* Фон некликабельный */
+  }
+  
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    z-index: -1; /* Круги ниже контента */
+  }
+  
+  .circle.one {
+    width: 600px;
+    height: 600px;
+    top: 10%;
+    left: 10%;
+  }
+  
+  .circle.two {
+    width: 800px;
+    height: 800px;
+    top: 40%;
+    left: 70%;
+  }
+  
+  /* Сетка из точек */
+  .dot-pattern {
+    position: absolute;
+    left: 65%;
+    top: 30%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: -2; /* Сетка ниже кругов */
+    transform: translate(50%, -50%);
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Контент */
+  .firstblock {
+    position: relative;
+    z-index: 10; /* Контент выше фона */
+    width: 100%;
+    min-height: 1004px;
+    background: linear-gradient(
+      134.74deg,
+      rgb(30, 60, 114) -2.036%,
+      rgb(42, 82, 152) 107.417%
+    );
+    display: flex;
+    flex-direction: column;
+    gap: 110px;
+    padding: 1% 18%;
+
+    &__header {
+        max-width: 1251px;
+        max-height: 50px;
+        align-items: center;
+        display: flex;
+        gap: 256px;
+
+        &__logoblock {
+            display: flex; /* Обеспечиваем горизонтальное расположение */
+            gap: 10px;
+            max-width: 150px;
+
+            &__title {
+                font-family: 'pb';
+                font-size: 2rem;
+                color: white;
+                opacity: 0.8;
+                white-space: nowrap; /* Предотвращает перенос текста */
+            }
+        }
+
+
+
+        &__nav {
+            display: flex;
+            gap: 5rem; /* Делаем промежуток между ссылками */
+            max-width: 502px;
+
+            & a {
+                font-family: 'pb';
+                font-size: 1.6rem;
+                color: white;
+                text-decoration: none; /* Убираем подчеркивание */
+                white-space: nowrap; /* Предотвращаем перенос текста */
+                transition: 0.7s;
+
+
+                &:hover {
+                    transform: scale(1.05);
+                    color: #6666CC;
+                }
+
+            }
+        }
+
+
+
+        &__btn {
+            max-width: 150px;
+            padding: 13px 31px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent; /* Прозрачный фон */
+            font-size: 1.6rem;
+            font-family: 'dmsm';
+            white-space: nowrap;
+            cursor: pointer;
+            border: 1px solid white; /* Белая рамка */
+            border-radius: 50px;
+            color: white; /* Белый текст */
+            position: relative; /* Для размещения псевдоэлемента */
+            overflow: hidden; /* Скрываем анимацию за границами кнопки */
+            transition: border-color 0.4s ease, color 0.4s ease; /* Плавный переход */
+          
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: radial-gradient(
+                circle,
+                rgba(255, 255, 255, 0.25) 0%,
+                rgba(255, 255, 255, 0) 70%
+              );
+              transform: scale(0); /* Исходное состояние анимации */
+              transition: transform 0.5s ease; /* Плавный переход для анимации */
+            }
+          
+            &:hover {
+              color: #e6e6e6; /* Лёгкое осветление текста при наведении */
+              border-color: #e6e6e6; /* Осветление рамки */
+              &::after {
+                transform: scale(4); /* Эффект увеличения радужного круга */
+              }
+            }
+          }
+          
+
+
+    }
+
+
+
+    &__main {
+        max-width: 1500px;
+        display: flex;
+
+
+        &__left {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            &__title {
+                font-family: 'dmsb';
+                font-size: 8.5rem;
+                color: white;
+            }
+
+            &__text {
+                font-family: 'dmsm';
+                font-size: 1.8rem;
+                color: white;
+                line-height: 42px;
+            }
+
+            &__btnblock {
+                max-width: 312px;
+                display: flex;
+                gap: 12px;
+
+                &__btn {
+                    max-width: 150px;
+                    padding: 13px 31px;
+                    height: 50px;
+                    border: 1.5px solid rgb(255, 255, 255);
+                    border-radius: 50px;
+                    background: white; /* Начальный белый фон */
+                    font-size: 1.6rem;
+                    font-family: 'dmsm';
+                    white-space: nowrap;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #264a8b; /* Цвет текста */
+                    position: relative; /* Для размещения псевдоэлемента */
+                    overflow: hidden; /* Скрываем всё, что выходит за границы кнопки */
+                    transition: color 0.5s ease, border-color 0.5s ease, transform 0.5s ease; /* Плавный переход */
+                  
+                    /* Заливка */
+                    &::before {
+                      content: "";
+                      position: absolute;
+                      top: 0;
+                      left: -50px;
+                      width: 0;
+                      height: 100%;
+                      background-color: #264a8b; /* Цвет заливки */
+                      transform: skewX(45deg); /* Наклон заливки */
+                      z-index: -1; /* Помещаем заливку под текст */
+                      transition: width 0.5s ease; /* Плавный переход заливки */
+                    }
+                  
+                    /* Ховер-эффекты */
+                    &:hover {
+                      color: white; /* Текст становится белым */
+                      border-color: #fdfdfd; /* Рамка становится синей */
+                      transform: scale(1.05); /* Лёгкое увеличение кнопки */
+                  
+                      &::before {
+                        width: 250%; /* Заливка расширяется, покрывая кнопку */
+                      }
+                    }
+                  }
+                  
+
+                &__btn2 {
+                    max-width: 150px;
+                    padding: 13px 31px;
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: transparent; /* Прозрачный фон */
+                    font-size: 1.6rem;
+                    font-family: 'dmsm';
+                    white-space: nowrap;
+                    cursor: pointer;
+                    border: 1px solid white; /* Белая рамка */
+                    border-radius: 50px;
+                    color: white; /* Белый текст */
+                    position: relative; /* Для размещения псевдоэлемента */
+                    overflow: hidden; /* Скрываем анимацию за границами кнопки */
+                    transition: border-color 0.4s ease, color 0.4s ease; /* Плавный переход */
+                  
+                    &::after {
+                      content: "";
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                      background: radial-gradient(
+                        circle,
+                        rgba(255, 255, 255, 0.25) 0%,
+                        rgba(255, 255, 255, 0) 70%
+                      );
+                      transform: scale(0); /* Исходное состояние анимации */
+                      transition: transform 0.5s ease; /* Плавный переход для анимации */
+                    }
+                  
+                    &:hover {
+                      color: #e6e6e6; /* Лёгкое осветление текста при наведении */
+                      border-color: #e6e6e6; /* Осветление рамки */
+                      &::after {
+                        transform: scale(4); /* Эффект увеличения радужного круга */
+                      }
+                    }
+                  }
+                  
+                  
+
+
+            }
+
+            &__sponsorbl {
+                max-width: 500px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                &__title {
+                    font-family: 'dmsr';
+                    font-family: 1.6rem;
+                    opacity: 0.6;
+                    color: white;
+                }
+
+                &__block {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 30px;
+                }
+
+
+            }
+
+
+        }
+
+
+        &__right {
+            width: 40%;
+
+            &__pic {
+                width: 100%;
+                height: 100%;
+                z-index: 100;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    z-index: 100;
+                    
+                }
+
+            }
+
+        }
+
+    }
+
+
+
+}
