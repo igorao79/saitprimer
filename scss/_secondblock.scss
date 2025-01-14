@@ -10,7 +10,7 @@ $color5: rgb(233, 116, 37);
     background-color: white;
     display: flex;
     flex-direction: column;
-    gap: 200px;
+    gap: 230px;
     align-items: center;
 
 
@@ -215,9 +215,10 @@ $color5: rgb(233, 116, 37);
 
 
                     &__flexblockelpic {
-                        width: 57px;
-                        height: 57px;
+                        max-width: 57px;
+                        max-height: 57px;
                         background-color: rgba($color4, 0.1);
+                        padding: 15px;
                         border-radius: 50px;
                         display: flex;
                         align-items: center;
@@ -373,12 +374,11 @@ $color5: rgb(233, 116, 37);
 
     &__foot {
         width: 100%;
-        min-height: 500px;
+        min-height: 600px;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 50px;
-
 
         &__block {
             max-width: 1300px;
@@ -499,4 +499,168 @@ $color5: rgb(233, 116, 37);
 
     }
 
+}
+
+
+// /////////////////////////////////////////
+
+@media only screen and (max-width: 760px) {
+    .secondblock {
+        gap: 80px;
+        padding: 60px 0px;
+        align-items: center;
+        justify-content: center;
+
+        &__header {
+            
+            gap: 50px;
+
+            &__titleblock {
+
+                &__title {
+                    font-size: 2.7rem;
+                }
+
+            }
+
+            &__flexblock {
+                flex-direction: column;
+                gap: 70px;
+                width: 100%;
+
+            }
+
+
+        }
+
+
+        &__main {
+            align-items: center;
+            justify-content: center;
+            padding-left: 0;
+            
+
+            &__left {
+                display: none;
+            }
+
+
+            &__right {
+                padding: 0;
+
+                &__titleblock {
+                    max-width: 300px;
+                    align-items: center;
+
+
+                    &__title {
+                        font-size: 3rem;
+                    }
+
+                }
+
+                &__flexblock {
+                    transform: translateX(0px);
+                    max-width: 330px;
+
+                }
+
+
+            }
+
+
+
+        }
+
+
+        &__submain {
+
+            &__titleblock {
+
+
+            
+                &__title {
+                    font-size: 2.4rem;
+                }
+
+            }
+
+            &__flexblock {
+                display: grid;
+                grid-template-columns: 1fr; /* В одну колонку на мобильных */
+                gap: 40px; /* Меньшие отступы */
+
+
+                &__line {
+                    flex-direction: column;
+                    gap: 50px;
+
+
+                    &__el {
+                        max-width: 100%; /* Для мобильных экрана, используем всю ширину */
+                        display: grid;
+                        grid-template-columns: 1fr 3fr; /* Разделяем картинку и контент */
+                        gap: 30px;
+
+                        &__content {
+                            gap: 30px;
+                            max-width: 230px;
+                        }
+
+                    }
+
+
+
+                }
+
+                
+
+                
+            
+
+
+            }
+            
+
+            
+        }
+
+        &__foot {
+
+            &__block {
+
+
+                &__right {
+                    display: none;
+                }
+
+
+                &__left {
+                    gap: 50px;
+                    width: 80%;
+                    align-items: center;
+
+                    &__titleblock {
+
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+
+                        &__title {
+                            font-size: 3rem;
+                        }
+
+                    }
+
+                }
+
+
+            }
+
+
+        }
+
+
+
+    }
 }

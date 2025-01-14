@@ -245,8 +245,26 @@
                     }
                 }
 
+                &__toggle {
+                    display: none; /* Скрываем кнопку по умолчанию */
+                    background: none;
+                    border: none;
+                    font-size: 2rem;
+                    color: white;
+                    margin: 10px 0;
+                    cursor: pointer;
+                    transition: transform 0.3s ease;
+            
+    
+            
+                }
+
 
             }
+
+        
+
+            
 
             &__btn {
                 position: absolute; /* Абсолютное позиционирование кнопки */
@@ -300,6 +318,10 @@
             &--premium {
                 background-color: white;
 
+                & svg path {
+                    fill: rgb(52, 61, 72) !important;
+                }
+
                 & li {
                     color: rgb(52, 61, 72);
                 }
@@ -339,4 +361,83 @@
 
 
 
+}
+
+
+@media only screen and (max-width: 768px) {
+    .fifthblock {
+
+        min-height: 1200px;
+
+        &__main {
+            gap: 5px;
+            &__card {
+                gap: 20px;
+                transition: min-height 0.7s ease; // Плавный переход для min-height
+
+                &__titleblock {
+                    left: 15%;
+                }
+        
+                &__content {
+                    min-width: 130px;
+                    align-items: center;
+                    justify-content: center;
+
+
+                    li.hidden {
+                        max-height: 0;
+                        opacity: 0;
+                        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+                        overflow: hidden;
+                    }
+
+                    li:not(.hidden) {
+                        max-height: 100px; // Установите значение больше, чем высота вашего пункта списка
+                        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+                    }
+
+                    & li {
+                        font-size: 1.3rem;
+                        line-height: 20px;
+                    }
+
+                    &__toggle {
+
+                        display: block;
+                        background: none !important;
+                        border: none !important;
+                        font-size: 3rem;
+                        color: black !important;
+                        margin: 10px 0;
+                        cursor: pointer;
+                        transition: transform 1s ease;
+                        position: absolute;
+                        top: 74%;
+                        left: 40%;
+                        width: 30px;
+                        height: 30px;
+
+                        &--expanded {
+                            transform: translateY(100px);
+                        }
+
+                        & svg path {
+                            fill: white; 
+                        }
+
+                    }
+
+
+
+                }
+
+
+                
+
+            }
+
+        }
+    }
+    
 }

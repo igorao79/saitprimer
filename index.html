@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>igormaket</title>
     <link rel="icon" href="pics/igoric.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="page">
         <div class="firstblock">
-            <div class="background">
+            <div class="firstblock__background">
                 <!-- Круги -->
-                <div class="circle one"></div>
-                <div class="circle two"></div>
-
+                <div class="firstblock__background__circle firstblock__background__circle--one"></div>
+                <div class="firstblock__background__circle firstblock__background__circle--two"></div>
         
                 <!-- Сетка из точек -->
-                <div class="dot-pattern"></div>
+                <div class="firstblock__background__dot-pattern"></div>
             </div>
             <header class="firstblock__header">
                 <div class="firstblock__header__logoblock">
@@ -27,6 +26,11 @@
                     </svg>
                     <span class="firstblock__header__logoblock__title">Landguru</span>
                 </div>
+                <button class="firstblock__header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <nav class="firstblock__header__nav">
                     <a href="#">Home</a>
                     <a href="#">Advertise</a>
@@ -349,31 +353,20 @@
                     <div class="fourthblock__clientblock__cardblock__card">
                         <div class="fourthblock__clientblock__cardblock__card__head">
                             <div class="fourthblock__clientblock__cardblock__card__head__rating">
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">★</span>
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">★</span>
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">★</span>
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">★</span>
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">☆</span>
-                            </div>
-                            <h3 class="fourthblock__clientblock__cardblock__card__head__title">Modern look & trending design</h3>
-                        </div>
-                        <p class="fourthblock__clientblock__cardblock__card__text">Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.</p>
-                        <div class="fourthblock__clientblock__cardblock__card__author">
-                            <div class="fourthblock__clientblock__cardblock__card__author__left" style="background-image: url(./pics/fourthblock/avatar1.avif), url(./pics/fourthblock/avatar1.webp), url(./pics/fourthblock/avatar1.png);"></div>
-                            <div class="fourthblock__clientblock__cardblock__card__author__right">
-                                <h4 class="fourthblock__clientblock__cardblock__card__author__right__name">Denny Hilguston</h4>
-                                <a href="#" class="fourthblock__clientblock__cardblock__card__author__right__link">@denny.hil</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fourthblock__clientblock__cardblock__card">
-                        <div class="fourthblock__clientblock__cardblock__card__head">
-                            <div class="fourthblock__clientblock__cardblock__card__head__rating">
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">★</span>
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">★</span>
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">★</span>
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">★</span>
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">☆</span>
+                                <input value="5" name="rate_card_1" id="star5_1" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star5_1" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="5 stars"></label>
+                                
+                                <input value="4" name="rate_card_1" id="star4_1" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star4_1" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="4 stars"></label>
+                                
+                                <input value="3" name="rate_card_1" id="star3_1" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star3_1" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="3 stars"></label>
+                                
+                                <input value="2" name="rate_card_1" id="star2_1" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star2_1" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="2 stars"></label>
+                                
+                                <input value="1" name="rate_card_1" id="star1_1" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star1_1" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="1 star"></label>
                             </div>
                             <h3 class="fourthblock__clientblock__cardblock__card__head__title">Design Quality & performance</h3>
                         </div>
@@ -386,14 +379,24 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="fourthblock__clientblock__cardblock__card">
                         <div class="fourthblock__clientblock__cardblock__card__head">
                             <div class="fourthblock__clientblock__cardblock__card__head__rating">
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">★</span>
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">★</span>
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">★</span>
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">★</span>
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">☆</span>
+                                <input value="5" name="rate_card_2" id="star5_2" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star5_2" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="5 stars"></label>
+                                
+                                <input value="4" name="rate_card_2" id="star4_2" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star4_2" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="4 stars"></label>
+                                
+                                <input value="3" name="rate_card_2" id="star3_2" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star3_2" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="3 stars"></label>
+                                
+                                <input value="2" name="rate_card_2" id="star2_2" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star2_2" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="2 stars"></label>
+                                
+                                <input value="1" name="rate_card_2" id="star1_2" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star1_2" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="1 star"></label>
                             </div>
                             <h3 class="fourthblock__clientblock__cardblock__card__head__title">Layout and organized layers</h3>
                         </div>
@@ -406,20 +409,60 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="fourthblock__clientblock__cardblock__card">
                         <div class="fourthblock__clientblock__cardblock__card__head">
                             <div class="fourthblock__clientblock__cardblock__card__head__rating">
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">★</span>
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">★</span>
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">★</span>
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">★</span>
-                                <span class="fourthblock__clientblock__cardblock__card__head__rating__star">☆</span>
+                                <input value="5" name="rate_card_3" id="star5_3" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star5_3" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="5 stars"></label>
+                                
+                                <input value="4" name="rate_card_3" id="star4_3" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star4_3" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="4 stars"></label>
+                                
+                                <input value="3" name="rate_card_3" id="star3_3" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star3_3" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="3 stars"></label>
+                                
+                                <input value="2" name="rate_card_3" id="star2_3" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star2_3" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="2 stars"></label>
+                                
+                                <input value="1" name="rate_card_3" id="star1_3" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star1_3" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="1 star"></label>
                             </div>
                             <h3 class="fourthblock__clientblock__cardblock__card__head__title">Modern look & trending design</h3>
                         </div>
                         <p class="fourthblock__clientblock__cardblock__card__text">Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.</p>
                         <div class="fourthblock__clientblock__cardblock__card__author">
-                            <div class="fourthblock__clientblock__cardblock__card__author__left" style="background-image: url(./pics/fourthblock/avatar4.avif), url(./pics/fourthblock/avatar4.webp), url(./pics/fourthblock/avatar4.png);"> </div>
+                            <div class="fourthblock__clientblock__cardblock__card__author__left" style="background-image: url(./pics/fourthblock/avatar4.avif), url(./pics/fourthblock/avatar4.webp), url(./pics/fourthblock/avatar4.png);"></div>
+                            <div class="fourthblock__clientblock__cardblock__card__author__right">
+                                <h4 class="fourthblock__clientblock__cardblock__card__author__right__name">Denny Hilguston</h4>
+                                <a href="#" class="fourthblock__clientblock__cardblock__card__author__right__link">@denny.hil</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fourthblock__clientblock__cardblock__card">
+                        <div class="fourthblock__clientblock__cardblock__card__head">
+                            <div class="fourthblock__clientblock__cardblock__card__head__rating">
+                                <input value="5" name="rate_card_4" id="star5_4" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star5_4" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="5 stars"></label>
+                                
+                                <input value="4" name="rate_card_4" id="star4_4" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star4_4" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="4 stars"></label>
+                                
+                                <input value="3" name="rate_card_4" id="star3_4" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star3_4" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="3 stars"></label>
+                                
+                                <input value="2" name="rate_card_4" id="star2_4" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star2_4" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="2 stars"></label>
+                                
+                                <input value="1" name="rate_card_4" id="star1_4" type="radio" class="fourthblock__clientblock__cardblock__card__head__rating__input">
+                                <label for="star1_4" class="fourthblock__clientblock__cardblock__card__head__rating__label" title="1 star"></label>
+                            </div>
+                            <h3 class="fourthblock__clientblock__cardblock__card__head__title">Top quality & innovation</h3>
+                        </div>
+                        <p class="fourthblock__clientblock__cardblock__card__text">Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.</p>
+                        <div class="fourthblock__clientblock__cardblock__card__author">
+                            <div class="fourthblock__clientblock__cardblock__card__author__left" style="background-image: url(./pics/fourthblock/avatar1.avif), url(./pics/fourthblock/avatar1.webp), url(./pics/fourthblock/avatar1.png);"></div>
                             <div class="fourthblock__clientblock__cardblock__card__author__right">
                                 <h4 class="fourthblock__clientblock__cardblock__card__author__right__name">Denny Hilguston</h4>
                                 <a href="#" class="fourthblock__clientblock__cardblock__card__author__right__link">@denny.hil</a>
@@ -427,6 +470,7 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
             <div class="fourthblock__secureblock">
                 <div class="fourthblock__secureblock__background"></div>
@@ -470,9 +514,11 @@
                         <li class="fifthblock__main__card__content__active">Ultimate access to all course, exercises and assessments</li>
                         <li class="fifthblock__main__card__content__active">Free acess for all kind of exercise corrections with downloads.</li>
                         <li class="fifthblock__main__card__content__active">Total assessment corrections with free download access system</li>
-                        <li class="fifthblock__main__card__content__inactive">Unlimited download of courses on the mobile app contents</li>
-                        <li class="fifthblock__main__card__content__inactive">Download and print courses and exercises in PDF</li>
+                        <li class="fifthblock__main__card__content__inactive hidden">Unlimited download of courses on the mobile app contents</li>
+                        <li class="fifthblock__main__card__content__inactive hidden">Download and print courses and exercises in PDF</li>
+                        <button class="fifthblock__main__card__content__toggle"><svg version="1.1" id="icons_1_" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 128 128" style="enable-background:new 0 0 128 128" xml:space="preserve"><g id="row2_1_"><g id="_x35__3_"><path class="st2" d="M64 .3C28.7.3 0 28.8 0 64s28.7 63.7 64 63.7 64-28.5 64-63.7S99.3.3 64 .3zm0 121C32.2 121.3 6.4 95.7 6.4 64 6.4 32.3 32.2 6.7 64 6.7s57.6 25.7 57.6 57.3c0 31.7-25.8 57.3-57.6 57.3zm21.7-63.2L70.4 70.3V41.7c0-2.2-2.3-3.2-4.4-3.2h-4c-2.2 0-3.9 1.8-3.9 3.9v28.4L42.3 58.1c-2.2 0-3.9 1.8-3.9 3.9v7.1L64 95.8l25.6-26.7V62c0-2.2-1.8-3.9-3.9-3.9z" id="down_1_"/></g></g></svg></button>
                     </ul>
+                    
                     <button class="fifthblock__main__card__btn">Signup now</button>
                 </div>
                 <div class="fifthblock__main__card fifthblock__main__card--premium">
@@ -489,8 +535,9 @@
                         <li class="fifthblock__main__card__content__active">Ultimate access to all course, exercises and assessments</li>
                         <li class="fifthblock__main__card__content__active"> Free acess for all kind of exercise corrections with downloads.</li>
                         <li class="fifthblock__main__card__content__active">Total assessment corrections with free download access system</li>
-                        <li class="fifthblock__main__card__content__active">Unlimited download of courses on the mobile app contents</li>
-                        <li class="fifthblock__main__card__content__active">Download and print courses and exercises in PDF</li>
+                        <li class="fifthblock__main__card__content__active hidden">Unlimited download of courses on the mobile app contents</li>
+                        <li class="fifthblock__main__card__content__active hidden">Download and print courses and exercises in PDF</li>
+                        <button class="fifthblock__main__card__content__toggle">&#x25BC;</button>
                     </ul>
                     <button class="fifthblock__main__card__btn">Signup now</button>
                 </div>

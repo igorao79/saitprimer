@@ -1,48 +1,48 @@
-/* Фоновые элементы */
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    z-index: -1; /* Убедитесь, что фон ниже */
-    pointer-events: none; /* Фон некликабельный */
-  }
+// /* Фоновые элементы */
+// .background {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100vh;
+//     overflow: hidden;
+//     z-index: -1; /* Убедитесь, что фон ниже */
+//     pointer-events: none; /* Фон некликабельный */
+//   }
   
-  .circle {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.05);
-    z-index: -1; /* Круги ниже контента */
-  }
+//   .circle {
+//     position: absolute;
+//     border-radius: 50%;
+//     background: rgba(255, 255, 255, 0.05);
+//     z-index: -1; /* Круги ниже контента */
+//   }
   
-  .circle.one {
-    width: 600px;
-    height: 600px;
-    top: 10%;
-    left: 10%;
-  }
+//   .circle.one {
+//     width: 600px;
+//     height: 600px;
+//     top: 10%;
+//     left: 10%;
+//   }
   
-  .circle.two {
-    width: 800px;
-    height: 800px;
-    top: 40%;
-    left: 70%;
-  }
+//   .circle.two {
+//     width: 800px;
+//     height: 800px;
+//     top: 40%;
+//     left: 70%;
+//   }
   
-  /* Сетка из точек */
-  .dot-pattern {
-    position: absolute;
-    left: 65%;
-    top: 30%;
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
-    background-size: 20px 20px;
-    z-index: -2; /* Сетка ниже кругов */
-    transform: translate(50%, -50%);
-  }
+//   /* Сетка из точек */
+//   .dot-pattern {
+//     position: absolute;
+//     left: 65%;
+//     top: 30%;
+//     width: 300px;
+//     height: 300px;
+//     background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+//     background-size: 20px 20px;
+//     z-index: -2; /* Сетка ниже кругов */
+//     transform: translate(50%, -50%);
+//   }
   
 
 
@@ -75,6 +75,55 @@
     flex-direction: column;
     gap: 110px;
     padding: 1% 18%;
+    overflow: hidden;
+
+
+
+    &__background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      z-index: -1; // Фон ниже контента
+      pointer-events: none; // Фон некликабельный
+
+
+      &__circle {
+          position: absolute;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.05);
+          z-index: -1; // Круги ниже контента
+
+          &--one {
+              width: 600px;
+              height: 600px;
+              top: 10%;
+              left: 10%;
+          }
+
+          &--two {
+              width: 800px;
+              height: 800px;
+              top: 40%;
+              left: 70%;
+          }
+      }
+
+      &__dot-pattern {
+          position: absolute;
+          left: 65%;
+          top: 30%;
+          width: 400px;
+          height: 400px;
+          background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
+          background-size: 20px 20px;
+          z-index: -2; // Сетка ниже кругов
+          transform: translate(50%, -50%);
+      }
+  }
+
+
 
     &__header {
         max-width: 1251px;
@@ -97,6 +146,39 @@
             }
         }
 
+
+        &__burger {
+          display: none;
+          background: none;
+          border: none;
+          cursor: pointer;
+          flex-direction: column;
+          gap: 5px;
+
+          & span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            opacity: 0.8;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+          }
+
+          &.open {
+            span:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            span:nth-child(2) {
+                opacity: 0;
+            }
+
+            span:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
+
+        }
 
 
         &__nav {
@@ -348,4 +430,97 @@
 
 
 
+}
+
+
+// ///////////////////////////////////
+
+@media only screen and (max-width: 760px) {
+  .firstblock {
+    padding: 1% 5%;
+    gap: 200px;
+
+    &__header {
+      gap: 50%;
+
+      &__nav {
+        opacity: 0; // Изначально скрыто
+        transform: translateY(-20px); // Сдвинуто вверх
+        pointer-events: none; // Отключаем клики
+        display: flex; // Устанавливаем flex всегда
+        flex-direction: column; // Вертикальное расположение
+        gap: 0px; // Без промежутков
+        position: absolute;
+        right: 3%;
+        top: 5%;
+        transition: opacity 0.3s ease, transform 0.3s ease; // Плавный переход
+    
+        &.active {
+            opacity: 1; // Полностью видимо
+            transform: translateY(0); // Возвращаем в исходное положение
+            pointer-events: auto; // Включаем клики
+            gap: 10px; // Добавляем промежутки между элементами
+        }
+    }
+    
+    
+    &__burger {
+        display: flex;
+        cursor: pointer; // Курсор в виде руки
+    }    
+
+      &__btn {
+        display: none;
+      }
+
+    }
+
+    &__main {
+
+
+      &__left {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        // border: 1px solid black;
+        gap: 80px;
+
+        &__title {
+          font-size: 4.2rem;
+        }
+
+        &__text {
+          font-size: 2rem;
+          line-height: 40px;
+        }
+
+        &__btnblock {
+          &__btn, &__btn2 {
+            font-size: 1.2rem;
+          }
+        }
+
+        &__sponsorbl {
+          svg {
+            width: 70px;
+          }
+        }
+
+
+      }
+
+
+      &__right {
+
+
+
+        &__pic {
+          display: none;
+        }
+      }
+
+
+    }
+
+  }
 }
