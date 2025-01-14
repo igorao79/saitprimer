@@ -2522,7 +2522,7 @@ a {
     overflow: hidden;
     -ms-flex-line-pack: center;
         align-content: center;
-    scale: 0.9;
+    scale: 0.85;
   }
   .sixblock__header__content__details {
     min-width: 420px;
@@ -2542,5 +2542,6 @@ a {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    scale: 0.8;
   }
 }/*# sourceMappingURL=style.css.map */
