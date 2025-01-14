@@ -2232,7 +2232,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .fifthblock {
-    min-height: 1200px;
+    min-height: 1100px;
   }
   .fifthblock__titleblock__span {
     font-size: 1.2rem;
@@ -2542,6 +2542,6 @@ a {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    scale: 0.8;
+    scale: 0.7;
   }
 }/*# sourceMappingURL=style.css.map */
