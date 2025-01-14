@@ -388,6 +388,7 @@
             &__card {
                 gap: 20px;
                 transition: min-height 0.7s ease; // Плавный переход для min-height
+                scale: (0.95);
 
                 &__titleblock {
                     left: 15%;

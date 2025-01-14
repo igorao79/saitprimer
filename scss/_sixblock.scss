@@ -210,8 +210,11 @@
                 justify-content: center;
                 overflow: hidden;
                 align-content: center;
+                scale: (0.9);
 
+                
                 &__details {
+                    
                     min-width: 420px;
 
                     &__text {

@@ -39,6 +39,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .wave {
@@ -522,7 +523,8 @@ a {
     font-size: 1.2rem;
   }
   .firstblock__main__left__sponsorbl svg {
-    width: 70px;
+    width: 55px;
+    gap: 5px;
   }
   .firstblock__main__right__pic {
     display: none;
@@ -2245,6 +2247,7 @@ a {
     gap: 20px;
     -webkit-transition: min-height 0.7s ease;
     transition: min-height 0.7s ease;
+    scale: 0.95;
   }
   .fifthblock__main__card__titleblock {
     left: 15%;
@@ -2519,6 +2522,7 @@ a {
     overflow: hidden;
     -ms-flex-line-pack: center;
         align-content: center;
+    scale: 0.9;
   }
   .sixblock__header__content__details {
     min-width: 420px;
