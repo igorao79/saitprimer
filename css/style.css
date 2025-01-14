@@ -1085,8 +1085,11 @@ a {
   .secondblock__header {
     gap: 50px;
   }
+  .secondblock__header__titleblock__span {
+    font-size: 1.2rem;
+  }
   .secondblock__header__titleblock__title {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
   }
   .secondblock__header__flexblock {
     -webkit-box-orient: vertical;
@@ -1126,6 +1129,10 @@ a {
             transform: translateX(0px);
     max-width: 330px;
   }
+  .secondblock__main__right__flexblock__flexblockel {
+    max-width: 90%;
+    padding-right: 5px;
+  }
   .secondblock__submain__titleblock__title {
     font-size: 2.4rem;
   }
@@ -1142,7 +1149,7 @@ a {
     gap: 50px;
   }
   .secondblock__submain__flexblock__line__el {
-    max-width: 100%; /* Для мобильных экрана, используем всю ширину */
+    max-width: 90%; /* Для мобильных экрана, используем всю ширину */
     display: grid;
     grid-template-columns: 1fr 3fr; /* Разделяем картинку и контент */
     gap: 30px;
@@ -1353,6 +1360,12 @@ a {
 @media only screen and (max-width: 760px) {
   .thirdblock {
     padding-top: 50px;
+  }
+  .thirdblock__titleblock__span {
+    font-size: 1.2rem;
+  }
+  .thirdblock__titleblock__title {
+    font-size: 3rem;
   }
   .thirdblock__main {
     -webkit-box-orient: vertical;
@@ -2219,6 +2232,12 @@ a {
   .fifthblock {
     min-height: 1200px;
   }
+  .fifthblock__titleblock__span {
+    font-size: 1.2rem;
+  }
+  .fifthblock__titleblock__title {
+    font-size: 3rem;
+  }
   .fifthblock__main {
     gap: 5px;
   }
@@ -2483,8 +2502,11 @@ a {
             justify-content: center;
     padding-left: 20px;
   }
+  .sixblock__header__titleblock__span {
+    font-size: 1.2rem;
+  }
   .sixblock__header__titleblock__title {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
   .sixblock__header__content {
     width: 100% !important;

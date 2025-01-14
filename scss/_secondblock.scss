@@ -516,11 +516,15 @@ $color5: rgb(233, 116, 37);
             gap: 50px;
 
             &__titleblock {
-
-                &__title {
-                    font-size: 2.7rem;
+            
+                &__span {
+                    font-size: 1.2rem;
                 }
-
+    
+                &__title {
+                    font-size: 2.5rem;
+                }
+    
             }
 
             &__flexblock {
@@ -563,6 +567,12 @@ $color5: rgb(233, 116, 37);
                     transform: translateX(0px);
                     max-width: 330px;
 
+                    &__flexblockel {
+                        max-width: 90%;
+                        padding-right: 5px;
+                    }
+
+
                 }
 
 
@@ -597,7 +607,7 @@ $color5: rgb(233, 116, 37);
 
 
                     &__el {
-                        max-width: 100%; /* Для мобильных экрана, используем всю ширину */
+                        max-width: 90%; /* Для мобильных экрана, используем всю ширину */
                         display: grid;
                         grid-template-columns: 1fr 3fr; /* Разделяем картинку и контент */
                         gap: 30px;

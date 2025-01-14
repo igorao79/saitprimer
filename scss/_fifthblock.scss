@@ -369,6 +369,20 @@
 
         min-height: 1200px;
 
+
+        &__titleblock {
+            
+            &__span {
+                font-size: 1.2rem;
+            }
+
+            &__title {
+                font-size: 3rem;
+            }
+
+        }
+
+
         &__main {
             gap: 5px;
             &__card {

@@ -181,6 +181,18 @@
 
         padding-top: 50px;
 
+        &__titleblock {
+            
+            &__span {
+                font-size: 1.2rem;
+            }
+
+            &__title {
+                font-size: 3rem;
+            }
+
+        }
+
         &__main {
             flex-direction: column;
             gap: 250px;
