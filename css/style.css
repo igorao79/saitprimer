@@ -2232,7 +2232,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .fifthblock {
-    min-height: 1100px;
+    min-height: 1000px;
   }
   .fifthblock__titleblock__span {
     font-size: 1.2rem;
