@@ -1,63 +1,3 @@
-// /* Фоновые элементы */
-// .background {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100vh;
-//     overflow: hidden;
-//     z-index: -1; /* Убедитесь, что фон ниже */
-//     pointer-events: none; /* Фон некликабельный */
-//   }
-  
-//   .circle {
-//     position: absolute;
-//     border-radius: 50%;
-//     background: rgba(255, 255, 255, 0.05);
-//     z-index: -1; /* Круги ниже контента */
-//   }
-  
-//   .circle.one {
-//     width: 600px;
-//     height: 600px;
-//     top: 10%;
-//     left: 10%;
-//   }
-  
-//   .circle.two {
-//     width: 800px;
-//     height: 800px;
-//     top: 40%;
-//     left: 70%;
-//   }
-  
-//   /* Сетка из точек */
-//   .dot-pattern {
-//     position: absolute;
-//     left: 65%;
-//     top: 30%;
-//     width: 300px;
-//     height: 300px;
-//     background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
-//     background-size: 20px 20px;
-//     z-index: -2; /* Сетка ниже кругов */
-//     transform: translate(50%, -50%);
-//   }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   /* Контент */
@@ -437,7 +377,7 @@
 
 @media only screen and (max-width: 760px) {
   .firstblock {
-    padding: 1% 5%;
+    padding: 1% 2%;
     gap: 200px;
 
     &__header {
@@ -521,6 +461,74 @@
       }
 
 
+    }
+
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .firstblock {
+    padding: 1% 3%;
+
+    &__background {
+
+      &__dot-pattern {
+        display: none;
+    }
+
+    }
+
+
+    &__header {
+      gap: 50px;
+
+      &__btn {
+        padding: 0 50px;
+      }
+
+    }
+
+    &__main {
+      align-items: center;
+      justify-content: center;
+
+      &__left {
+
+        gap: 70px;
+
+        &__title {
+          font-size: 5rem;
+        }
+
+        &__sponsorbl {
+          gap: 60px;
+        }
+
+      }
+
+      &__right {
+        display: none;
+
+
+      }
+
+    }
+
+  }
+} 
+
+
+@media (min-width: 768px) and (max-width: 1400px) and (orientation: landscape) {
+
+  .firstblock {
+    padding: 1%;
+
+
+    
+
+    &__header {
+      gap: 150px;
     }
 
   }

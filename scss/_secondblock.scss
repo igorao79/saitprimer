@@ -674,3 +674,102 @@ $color5: rgb(233, 116, 37);
 
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .secondblock {
+
+        &__main {
+            padding: 0 4%;
+
+            &__right {
+
+                &__titleblock {
+
+                    &__title {
+
+                        font-size: 3rem;
+                    }
+                }
+
+                &__flexblock {
+                    
+                    &__flexblockel {
+                        flex-direction: column;
+                        min-height: 300px;
+                        padding: 20px 50px;
+                    }
+                    
+                }
+
+            }
+
+            &__left {
+                &__pic {
+                    transform: translateY(25%);
+
+                }
+            }
+
+        }
+
+        &__submain {
+
+            &__flexblock {
+                padding: 0% 5%;
+
+                &__line {
+
+                    gap: 30px;
+
+                }
+
+            }
+
+        }
+
+        &__foot {
+            padding-bottom: 50px;
+            padding-left: 10px;
+        }
+
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1400px) and (orientation: landscape) {
+    .secondblock {
+        padding: 0 4%;
+
+        &__main {
+            padding: 0 4%;
+            gap: 70px;
+
+            &__right {
+                gap: 150px;
+
+                &__titleblock {
+
+                    &__title {
+
+                        font-size: 4rem;
+                    }
+                }
+
+                &__flexblock {
+                    
+                    &__flexblockel {
+                        flex-direction: column;
+                        min-height: 200px;
+                        padding: 20px 30px;
+                    }
+                    
+                }
+
+                
+
+            }
+
+        }
+
+    }
+}

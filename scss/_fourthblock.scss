@@ -460,3 +460,27 @@
 
     }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+    .fourthblock {
+
+        padding-bottom: 50px;
+
+        &__secureblock {
+
+            &__pic {
+                max-width: 450px;
+
+                & img {
+                    object-fit: contain;
+                }
+
+            }
+
+        }
+
+
+    }
+
+}

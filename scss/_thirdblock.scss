@@ -222,3 +222,63 @@
     }
 
 }
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .thirdblock {
+
+        padding-top: 50px;
+        &__main {
+            flex-direction: column;
+            gap: 150px;
+
+            &__el {
+                align-items: center;
+
+                &__span {
+                    min-width: 72px;
+                }
+
+                & svg {
+                    left: 20%;
+                    top: 100%;
+                    rotate: 90deg;
+                }
+
+                &__bottom {
+                    left: 8% !important;
+                }
+
+            }
+
+        }
+
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1400px) and (orientation: landscape) {
+
+    .thirdblock {
+
+        padding: 0 20px;
+
+        &__main {
+            gap: 100px;
+
+            &__el {
+
+                &__title {
+                    font-size: 2rem;
+                }
+
+                &__bottom {
+                    top: 10%;
+                }
+                
+            }
+
+        }
+
+    }
+
+}
