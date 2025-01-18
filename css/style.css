@@ -84,7 +84,7 @@ a {
   position: relative;
   z-index: 10; /* Контент выше фона */
   width: 100%;
-  min-height: 1004px;
+  min-height: 950px;
   background: linear-gradient(134.74deg, rgb(30, 60, 114) -2.036%, rgb(42, 82, 152) 107.417%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -567,6 +567,7 @@ a {
 @media (min-width: 768px) and (max-width: 1400px) and (orientation: landscape) {
   .firstblock {
     padding: 1%;
+    min-height: 850px;
   }
   .firstblock__header {
     gap: 150px;

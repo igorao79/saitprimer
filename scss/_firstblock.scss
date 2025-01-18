@@ -5,7 +5,7 @@
     position: relative;
     z-index: 10; /* Контент выше фона */
     width: 100%;
-    min-height: 1004px;
+    min-height: 950px;
     background: linear-gradient(
       134.74deg,
       rgb(30, 60, 114) -2.036%,
@@ -523,9 +523,9 @@
 
   .firstblock {
     padding: 1%;
+    min-height: 850px;
 
 
-    
 
     &__header {
       gap: 150px;
